@@ -12,8 +12,8 @@ export default function InformationComp({}: Props) {
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        stroke="currentColor"
-        className="absolute w-6 h-6 cursor-pointer right-8 top-8"
+        stroke="white"
+        className="absolute w-6 h-6 cursor-pointer right-4 md:right-8 top-4 md:top-8"
         onClick={() => setInfoModal(true)}
       >
         <path
@@ -24,7 +24,7 @@ export default function InformationComp({}: Props) {
       </svg>
       {infoModal && (
         <div className="absolute top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black/70">
-          <div className="relative flex flex-col w-2/4 gap-4 px-8 py-6 text-lg text-gray-100 rounded-sm shadow-lg bg-emerald-500 h-2/4">
+          <div className="relative flex flex-col w-full h-full gap-4 px-8 py-6 text-lg text-gray-100 rounded-sm shadow-lg lg:w-2/4 bg-emerald-500 lg:h-2/4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -62,7 +62,7 @@ export default function InformationComp({}: Props) {
             </div>
             <div>
               <p className="font-bold">Legends:</p>
-              <div className="flex flex-col gap-2 p-2 px-8">
+              <div className="flex flex-col gap-2 p-2 lg:px-8">
                 <div className="table border border-b-0 border-gray-500/70">
                   <div className="flex py-1 border-b row border-inherit">
                     <div className="flex items-center justify-center w-1/3 border-r column border-inherit">
@@ -70,7 +70,7 @@ export default function InformationComp({}: Props) {
                         className={`w-4 h-4 text-xs border border-white`}
                       ></div>
                     </div>
-                    <div className="flex items-center justify-center w-2/3 text-base column">
+                    <div className="flex items-center justify-center w-2/3 p-2 text-base lg:p-0 column">
                       Each EMPTY box refers to a week you still have.
                     </div>
                   </div>
@@ -80,7 +80,7 @@ export default function InformationComp({}: Props) {
                         className={`w-4 h-4 text-xs border-white bg-red-400`}
                       ></div>
                     </div>
-                    <div className="flex items-center justify-center w-2/3 text-base column">
+                    <div className="flex items-center justify-center w-2/3 p-2 text-base lg:p-0 column">
                       Each RED box refers to a week you passed away.
                     </div>
                   </div>
@@ -102,7 +102,7 @@ export default function InformationComp({}: Props) {
                         />
                       </svg>
                     </div>
-                    <div className="flex items-center justify-center w-2/3 text-base column">
+                    <div className="flex items-center justify-center w-2/3 p-2 text-base lg:p-0 column">
                       On X axis, it's age. From 0 to 72 (Average life expectancy
                       in Bangladesh)
                     </div>
@@ -125,7 +125,7 @@ export default function InformationComp({}: Props) {
                         />
                       </svg>
                     </div>
-                    <div className="flex items-center justify-center w-2/3 text-base column">
+                    <div className="flex items-center justify-center w-2/3 p-2 text-base lg:p-0 column">
                       On Y axis, it's weeks. There are 52 weeks in a column. (
                       52 weeks = 1 year )
                     </div>

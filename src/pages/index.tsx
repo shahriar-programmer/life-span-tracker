@@ -18,7 +18,7 @@ export default function Home() {
   }, [dob]);
 
   return (
-    <main className="w-full h-screen p-4 bg-gray-900 text-white/70">
+    <main className="w-full h-screen p-4 overflow-scroll bg-gray-900 text-white/70">
       <Head>
         <title>Life Span Progress Tracker</title>
         <meta charSet="UTF-8" />
@@ -33,9 +33,11 @@ export default function Home() {
         <meta name="author" content="Shahriar Ahmed Shovon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      {inputModal && (
-        <InputModal setDOB={setDOB} setInputModal={setInputModal} />
-      )}
+      <InputModal
+        setDOB={setDOB}
+        setInputModal={setInputModal}
+        inputModal={inputModal}
+      />
       <ProgressDiv totalWeeks={totalWeeks} />
       <InformationComp />
     </main>
