@@ -134,9 +134,9 @@ export default function InformationComp({}: Props) {
               </div>
             </div>
             <div className="flex justify-center -mb-2 text-sm gap-x-4">
-              <Link href="" className="border-b" target="_blank">Github</Link>
-              <Link href="" className="border-b" target="_blank">Portfolio</Link>
-              <Link href="" className="border-b" target="_blank">Blog</Link>
+              <Link href="https://github.com/shahriar-programmer/life-span-tracker" className="border-b" target="_blank">Github</Link>
+              <Link href="https://www.shahriarahmed.me/" className="border-b" target="_blank">Portfolio</Link>
+              <Link href="https://blog.shahriarahmed.me/" className="border-b" target="_blank">Blog</Link>
             </div>
             <p className="text-sm text-center">© 2023 - Shahriar Ahmed Shovon</p>
           </div>
